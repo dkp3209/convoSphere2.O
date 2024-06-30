@@ -58,7 +58,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "user/register/",
+        "https://convo-sphere2-o.vercel.app/user/register/",
         data,
         config
       );
