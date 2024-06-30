@@ -1,10 +1,6 @@
 {
-   "version": 2,
-   "name": "convoSphere2.O",
-   "builds": [
-      { "src": "app.js", "use": "@vercel/node" }
-   ],
-   "routes": [
-      { "src": "/(.*)", "dest": "/" }
-   ]
+  "version": 2,
+  "name": "convoSphere2.O",
+  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
