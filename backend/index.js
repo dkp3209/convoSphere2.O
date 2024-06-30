@@ -7,7 +7,7 @@ const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 app.use(
   cors({
-    origin: "https://convo-sphere2-o-hb8l.vercel.app/",
+    origin: "https://convo-sphere2-o-hb8l.vercel.app",
     methods: ["POST","GET"],
     credentials: true,
   })
