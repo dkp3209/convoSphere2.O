@@ -36,7 +36,7 @@ function Groups() {
     };
 
     axios
-      .get("convo-sphere2-o.vercel.app/chat/fetchGroups", config)
+      .get("https://convo-sphere2-o.vercel.app/chat/fetchGroups", config)
       .then((response) => {
         console.log("Group Data from API ", response.data);
         SetGroups(response.data);
@@ -97,7 +97,7 @@ function Groups() {
                   //   },
                   // };
                   // axios.post(
-                  //   "convo-sphere2-o.vercel.app/chat/",
+                  //   "https://convo-sphere2-o.vercel.app/chat/",
                   //   {
                   //     userId: user._id,
                   //   },

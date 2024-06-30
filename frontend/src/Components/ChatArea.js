@@ -32,7 +32,7 @@ function ChatArea() {
     };
     axios
       .post(
-        "convo-sphere2-o.vercel.app/message/",
+        "https://convo-sphere2-o.vercel.app/message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -55,7 +55,7 @@ function ChatArea() {
       },
     };
     axios
-      .get("convo-sphere2-o.vercel.app/message/" + chat_id, config)
+      .get("https://convo-sphere2-o.vercel.app/message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         setloaded(true);

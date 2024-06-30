@@ -30,7 +30,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "convo-sphere2-o.vercel.app/user/login/",
+        "https://convo-sphere2-o.vercel.app/user/login/",
         data,
         config
       );

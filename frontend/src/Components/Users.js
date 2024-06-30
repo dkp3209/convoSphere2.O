@@ -34,7 +34,7 @@ function Users() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("convo-sphere2-o.vercel.app/user/fetchUsers", config).then((data) => {
+    axios.get("https://convo-sphere2-o.vercel.app/user/fetchUsers", config).then((data) => {
       console.log("UData refreshed in Users panel ");
       setUsers(data.data);
       // setRefresh(!refresh);
@@ -94,7 +94,7 @@ function Users() {
                     },
                   };
                   axios.post(
-                    "convo-sphere2-o.vercel.app/chat/",
+                    "https://convo-sphere2-o.vercel.app/chat/",
                     {
                       userId: user._id,
                     },
